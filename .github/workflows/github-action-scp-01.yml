@@ -12,7 +12,7 @@ jobs:
         
         ### ec2로 전달 scp 이용
       - name: From Github Actions to AWS EC2 through SCP
-        uses: appleboy/scp-action@1
+        uses: appleboy/scp-action@v1
         with: 
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
